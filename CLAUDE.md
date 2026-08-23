@@ -12,7 +12,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | `Master___CV.tex` | Comprehensive CV — same content, descriptions shortened. |
 | `Research___Resume.tex` | Short selective resume (research applications). |
 | `TA___Resume.tex` | Targeted resume for ML/AI/DS teaching-assistant applications. |
-| `Leadership___Resume.tex` | Targeted resume for non-academic part-time jobs. |
+| `Leadership___Resume.tex` | Targeted resume for non-academic part-time/admin roles (management, marketing, proctoring, advising). |
 
 Each `.tex` has a matching `.pdf` — regenerate and commit together.
 
