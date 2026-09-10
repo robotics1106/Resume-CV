@@ -92,7 +92,7 @@ rm -f *.aux *.log *.out    # never commit these
 
 ## Publishing
 
-Remote `resume-cv` → `github.com/Ritabrata-Chakraborty/Resume-CV.git` (**public**). No `origin` remote.
+Remote `resume-cv` → `github.com/robotics1106/Resume-CV.git` (**public**). No `origin` remote.
 
 Real contact info must never reach it. `scripts/publish.sh` handles this:
 

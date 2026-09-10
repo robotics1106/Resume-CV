@@ -1,7 +1,7 @@
 %-------------------------
 % Resume in LaTeX
 % Author: Ritabrata Chakraborty
-% Based on: https://github.com/Ritabrata-Chakraborty/Research-Resume
+% Based on: https://github.com/robotics1106/Research-Resume
 % License: MIT
 %-------------------------
 
@@ -113,11 +113,11 @@
 \begin{center}
   \textbf{\huge Ritabrata Chakraborty} \\ [6pt]
   \small
-  {\color{blue}\href{https://github.com/Ritabrata-Chakraborty}{GitHub} $|$
+  {\color{blue}\href{https://github.com/robotics1106}{GitHub} $|$
   \href{https://scholar.google.com/citations?user=JikCewwAAAAJ&hl=en}{Google Scholar} $|$
-  \href{https://ritabrata-chakraborty.github.io/Portfolio/}{Portfolio} $|$
-  \href{https://www.linkedin.com/in/ritabrata-chakraborty-a63268251/}{LinkedIn} $|$
-  \href{mailto:ritabratabits@gmail.com}{ritabratabits@gmail.com} $|$ \href{tel:+918910783548}{+91 89107 83548}}
+  \href{https://robotics1106.github.io/Portfolio/}{Portfolio} $|$
+  \href{https://www.linkedin.com/in/rc14372}{LinkedIn} $|$
+  \href{mailto:ritabratabits@gmail.com}{ritabratabits@gmail.com} $|$ \href{tel:+12673253075}{+1 267 325 3075}}
 \end{center}
 
 %-----------EDUCATION-----------
@@ -256,7 +256,15 @@
 \section{Experience -- Robotics \& Computer Vision}
 \resumeSubHeadingListStart
   \resumeSubheading
-    {Multi-Critic Decomposition for Autonomous Indoor Navigation \color{blue}\href{https://github.com/Ritabrata-Chakraborty/Quadcopter-RL-Off-Policy-Velocity-Control/tree/main}{\faExternalLink*}}{}
+    {Vision-Language Grounded Multi-Robot Coordination and Navigation}{}
+    {Supervisor: {\color{blue}\href{https://www.bits-pilani.ac.in/pilani/avinash-gautam/}{Dr. Avinash Gautam,}} Associate Professor, BITS Pilani}{May '25 – Aug '25}
+  \resumeItemListStart
+    \resumeItem{Surveyed literature on vision-language grounded multi-robot coordination and VLMaps-based spatial representations.}
+    \resumeItem{Reviewed decentralized navigation strategies fusing 3D visual-language maps with LLM-driven instruction parsing.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Off-Policy Multi-Critic RL with Reward Decomposition for Indoor Exploration \color{blue}\href{https://github.com/robotics1106/Quadcopter-RL-Off-Policy-Velocity-Control/tree/main}{\faExternalLink*}}{}
     {Supervisor: {\color{blue}\href{https://ieeexplore.ieee.org/author/37085653936}{Dr. Kaushal Kishore,}} Principal Scientist, CSIR-CEERI}{Jan '26 – May '26}
   \resumeItemListStart
     \resumeItem{Integrated three specialized critics for forward progress, lateral avoidance, and angular alignment with distinct reward signals.}
@@ -306,11 +314,19 @@
   \resumeItemListEnd
 
   \resumeSubheading
-    {Monocular Vision-Based UAV Navigation for Orchard Monitoring \color{blue}\href{https://github.com/Ritabrata-Chakraborty/Monocular-Vision-Based-UAV-Navigation-for-Orchard-Monitoring.git}{\faExternalLink*}}{}
+    {Monocular Vision-Based UAV Navigation for Orchard Monitoring \color{blue}\href{https://github.com/robotics1106/Monocular-Vision-Based-UAV-Navigation-for-Orchard-Monitoring.git}{\faExternalLink*}}{}
     {Supervisor: {\color{blue}\href{https://ieeexplore.ieee.org/author/37085653936}{Dr. Kaushal Kishore,}} Principal Scientist, CSIR-CEERI}{Jan '24 – Feb '25}
   \resumeItemListStart
     \resumeItem{Engineered a UAV-based orchard monitoring system using YOLOv11 (Box mAP50: 95.5\%, Mask mAP50: 96.5\%).}
     \resumeItem{Implemented B-spline trajectory logic and coded custom yaw-roll controller to minimize drift under wind.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Image-Based Visual Servoing for Automated Radar Control and UAV Tracking}{}
+    {Supervisor: {\color{blue}\href{https://www.researchgate.net/profile/Rishi-Verma-3}{Dr. Rishi Verma,}} Head (ESDS), PPEMD, BARC}{Jun '24 – Jul '24}
+  \resumeItemListStart
+    \resumeItem{Established automated radar alignment using YOLOv8 and DeepSORT, improving tracking recall to 91\% and speed by 13\%.}
+    \resumeItem{Interfaced a PLC-based actuation system enabling continuous UAV lock-in within $\pm5^\circ$ angular error.}
   \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -323,7 +339,7 @@
     {Supervisor: {\color{blue}\href{https://www.kuleuven.be/wieiswie/en/person/00155770}{Dr. Pradeep Kundu,}} Assistant Professor, KU Leuven}{Sep '24 – May '26}
 
     \resumeSubSubheading
-      {\textbf{\hspace{4pt}Auxiliary Classifier WGAN-GP for Time-Series Sensor Data Generation} {\color{blue}\href{https://github.com/Ritabrata-Chakraborty/An-Efficient-Approach-for-Synthetic-Data-Generation-and-Fault-Diagnosis-for-Rotating-Machinery}{\faExternalLink*}}}{}
+      {\textbf{\hspace{4pt}Auxiliary Classifier WGAN-GP for Time-Series Sensor Data Generation} {\color{blue}\href{https://github.com/robotics1106/An-Efficient-Approach-for-Synthetic-Data-Generation-and-Fault-Diagnosis-for-Rotating-Machinery}{\faExternalLink*}}}{}
     \resumeItemListStart
       \resumeItem{Built ACWGAN-GP with TCN discriminator for minority fault class augmentation reaching $\sim$100\% classification accuracy.}
       \resumeItem{Assessed synthetic data using PCC, Cosine Similarity, MMD, and KL Divergence on FFT spectra.}
@@ -341,11 +357,27 @@
 \section{Projects}
 \resumeSubHeadingListStart
   \resumeProjectHeading
+    {\textbf{Vision-Guided Robotic Arm for Simulated Oral Cancer Screening}}
+    {\textit{Aug '25 – Dec '25}}
+  \resumeItemListStart
+    \resumeItem{Simulated a KUKA KR 150 R3100 arm in MATLAB/Simulink for end-effector guidance inside a modeled oral cavity.}
+    \resumeItem{Trained a vision model to detect cancerous regions, localizing the end effector through ORB-SLAM3 tracking.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
     {\textbf{Autonomous Drone Navigation $|$ MathWorks Global Student Drone Challenge 2025}}
     {\textit{Mar '25 – Apr '25}}
   \resumeItemListStart
     \resumeItem{Designed vision-based control for Parrot Mambo drone using masking, ray-tracing, and closed-loop yaw control.}
     \resumeItem{Optimized speed control and zone-based auto-landing to reduce track completion time.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{3D Lunar Surface Modeling from DEM Data $|$ ISRO Immersion Challenge 2024 \color{blue}\href{https://drive.google.com/file/d/16G0VYC5aEpGW_xqj6y0GRwX1Hb5cWeJk/view?usp=drive_link}{\faExternalLink*}}}
+    {\textit{Jul '24 – Jul '24}}
+  \resumeItemListStart
+    \resumeItem{Created lunar terrain models from TMC DEM data with curvature extraction, rendered live in UE5.}
+    \resumeItem{Automated data import and heightmap transformation via a custom plugin, processing each tile in under 10s.}
   \resumeItemListEnd
 
   \resumeProjectHeading
@@ -361,7 +393,7 @@
 \section{Awards \& Achievements}
 \resumeSubHeadingListStart
   \resumeSubheading
-    {\textbf{Finalist} — Meta PyTorch OpenEnv Hackathon (India) \color{blue}\href{https://github.com/Ritabrata-Chakraborty/OpenEnv-Quadcopter-Controller}{\faExternalLink*}}{\mdseries\textit{Apr '26}}
+    {\textbf{Finalist} — Meta PyTorch OpenEnv Hackathon (India) \color{blue}\href{https://github.com/robotics1106/OpenEnv-Quadcopter-Controller}{\faExternalLink*}}{\mdseries\textit{Apr '26}}
     {}{}
   \vspace{-14pt}
 
@@ -459,6 +491,15 @@
   \resumeItemListEnd
 \resumeSubHeadingListEnd
 
+%----------PROFESSIONAL ACTIVITIES----------
+\section{Professional Activities}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {\textbf{Graduate Student Member} — IEEE}{\mdseries\textit{2026}}
+    {}{}
+  \vspace{-14pt}
+\resumeSubHeadingListEnd
+
 %----------TECHNICAL SKILLS & COURSEWORK----------
 \section{Technical Skills \& Coursework}
 \nbresumeItemListStart
@@ -481,8 +522,8 @@
 % \subsection*{Contact \& Professional Profiles}
 % \nbresumeItemListStart
 %   \nbresumeItem{Google Scholar: \color{blue}\url{https://scholar.google.com/citations?user=JikCewwAAAAJ&hl=en}}
-%   \nbresumeItem{Personal Homepage: \color{blue}\url{https://ritabrata-chakraborty.github.io/Portfolio/}}
-%   \nbresumeItem{LinkedIn: \color{blue}\url{https://www.linkedin.com/in/ritabrata-chakraborty-a63268251/}}
+%   \nbresumeItem{Personal Homepage: \color{blue}\url{https://robotics1106.github.io/Portfolio/}}
+%   \nbresumeItem{LinkedIn: \color{blue}\url{https://www.linkedin.com/in/rc14372}}
 % \nbresumeItemListEnd
 
 % \subsection*{Publications \& Presentations}
@@ -513,7 +554,7 @@
 % \subsection*{Awards \& Achievements}
 % \nbresumeItemListStart
 %   \nbresumeItem{Finalist -- Meta PyTorch OpenEnv Hackathon (India) \break
-%   {Project: \color{blue}\url{https://github.com/Ritabrata-Chakraborty/OpenEnv-Quadcopter-Controller}}}
+%   {Project: \color{blue}\url{https://github.com/robotics1106/OpenEnv-Quadcopter-Controller}}}
 %   \nbresumeItem{3\textsuperscript{rd} Place -- MathWorks Global Student Drone Challenge 2025}
 %   \nbresumeItem{Finalist -- ISRO Immersion Challenge (AI for Space \& Geospatial Innovation) \break
 %   {Presentation: \color{blue}\url{https://drive.google.com/file/d/16G0VYC5aEpGW_xqj6y0GRwX1Hb5cWeJk/view?usp=drive_link}}}
