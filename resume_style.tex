@@ -1,0 +1,25 @@
+%=========================================================================
+% Style config for EVERY resume and the CV (all seven .tex files read it).
+% Edit a value, save, run pdflatex <file>.tex. Affects all of them at once.
+%=========================================================================
+
+%----------FONT SIZE----------
+\def\RRfontptnum{8}                   % 8, 9, 10, 11, or 12 - sets every text size at once
+\edef\RRfontpt{\RRfontptnum pt}
+\def\RRclass{article}                  % do not edit - set automatically from \RRfontptnum
+\ifnum\RRfontptnum<10 \def\RRclass{extarticle}\fi
+
+%----------MARGINS----------
+\def\RRmarginL{0.3in}                  % left margin
+\def\RRmarginR{0.3in}                  % right margin
+\def\RRmarginT{0.2in}                  % top margin
+\def\RRmarginB{0.2in}                  % bottom margin
+
+%----------SPACING----------
+\def\RRgap{3.5pt}                      % gap between ANY two lines - titles, rules, entries, bullets alike
+
+%----------NOTES----------
+% - \RRgap is the white space from one line's descenders to the next line's capitals.
+%   It is exact everywhere, including across size changes (title -> body text).
+% - Style changes here are invisible to scripts/check_consistency.py - only
+%   content (after \begin{document}) is checked.
